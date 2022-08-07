@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif !important;
+    background-color: #fbf0ff !important;
+}
+
+.navbar{
+    z-index: 9999;
+    margin-top: -10px;
+}
+
+.navbar .container-fluid{
+    background-color: #eab2df;
+    width: 100%;
+}
+
+.navbar .container-fluid .navbar-brand img{
+    width: 170px;
+}
+
+button{
+    width: 75px;
+}
+
+.row-1, .row-2, .row-3, .row-4, .row-5{
+    margin: 10px;
+    padding: 5px;
+    border: solid #dfbcf2;
+    border-radius: 10px;
+}
+
+.info-person img.perfil{
+    width: 200px;
+    border: solid;
+    border-radius: 100px;
+}
