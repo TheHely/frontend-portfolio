@@ -11,107 +11,124 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 </head>
 
-<body class="body">
-  <nav class="navbar navbar-expand-lg navbar-light">
-      
-    <div class="container-fluid">
+<body class="body bg-black text-light">
+  <!--Navbar-->
+    <header class="container-fluid sticky-top bg-dark">
+      <nav class="navbar navbar-expand-xxl border-1 mw-100">
+        <div class="container-fluid ">
+          <a class="nav-link" href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"><img class="navbar-brand img-fluid" src="img\APLogo-20-20.png" alt="Argentina Programa"></a>
 
-        <a class="navbar-brand" href="index.html">
-          
-          <img src="img\APLogo-20-20.png" alt="Argentina Programa">
-        
-        </a>
+          <!--Menú hamburguesa-->
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          
-          <span class="navbar-toggler-icon"></span>
-        
-        </button>
+          <div id="MenuNavegacion" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-3">
+              <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/helen.villarroel.7140/"><img class="img-fluid" src="img\Instagram_icon-icons.com_66804.png" alt="Instagram"></a></li>
+              <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/helen-aylen-villarroel-090969246/"><img class="img-fluid" src="img\linkedin_socialnetwork_17441.png" alt="Linkedin"></a></li>
+              <li class="nav-item"><a class="nav-link" href="https://github.com/TheHely"><img class="img-fluid" src="img\github_icon-icons.com_60477.png" alt="Github"></a></li>
+            </ul>
+            </ul>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-  
-            <li class="nav-item">
-              <a class="nav-link" href="experiencia.html">Experiencia</a>
-            </li>
-           
-            <li class="nav-item">
-              <a class="nav-link" href="#education">Educación</a>
-            </li>
-  
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Habilidades</a>
-            </li>
-  
-            <li class="nav-item">
-              <a class="nav-link" href="#proyect">Proyecto</a>
-            </li>
-  
-  
-          <form class="d-flex">
-            
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-
-          </form>
-
-          <button class="btn btn-outline-success btn-login" type="button"><a href="login.html">Login</a></button>
-
+            <ul class="navbar-nav ms-3">
+              <li class="nav-item">
+                <button class="btn nav-item btn-light float-sm-end active" type="button"><a class="nav-link" href="login.html">Log in</a></button>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </header>
+<!--Fin navbar-->
 
+<!--Contenido-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center">
+        <img class="helenv img-fluid rounded-circle py-2" src="img\Villarroel-Helen-A.jpg" alt="Villarroel Helen A.">
+        <h1 class="display-4 color-bienvenido">¡Bienvenido!</h1>
+        <h3 >Soy <b>Helen A. Villarroel</b>, una desarrolladora web</h3>
+        <h4>
+          <small class="text-muted">Actualmente estoy creando un portfolio web y estudiando en Argentina Programa, <br> segunda instancia (#YoProgramo)</small>
+        </h4>
       </div>
-      
-    </nav>
-  
-    <div class="container-flu">
+    </div>
+  </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button class="btn btn-info"><a href="index.html#experience">Experiencia</a></button>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-info"><a href="index.html#education">Educación</a></button>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-info"><a href="index.html#skills">Habilidades</a></button>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-info"><a href="index.html#proyect">Proyectos</a></button>
+          </div>
+        </div>
+      </div>
 
-            <div class="row-1">
-              
-                <section name="info-person" class="info-person">
-                    
-                    <img class="perfil" src="img\Villarroel-Helen-A.jpg" alt="Villarroel Helen A.">
-                    
-                    <div class="texto-in">
-                      
-                      <h1 class="bienvenida">¡Bienvenido!</h1>
-                      <h2 class="soy">Soy Helen A. Villarroel, una desarrolladora web</h2>
-                    
-                    </div>
+    <div class="container">
+          <div class="row">
+            <div class="col-6">
+                <h3>Experiencia</h3>
+                <a href="" class="logo-lugar">Logo</a>
+                <h4>Mis dulzura</h4>
+                <p class="puesto"></p>
+                <p class="periodo"></p>
+                <p class="actividades"></p>
+            </div> 
+        <div class="col-6">
+          <h3>Proyectos</h3>
+          <h4>Nombre</h4>
+          <p class="fecha-realizacion"></p>
+          <p class="description"></p>
+          <p class="evidencia"></p>
+          <a href=""><img src="" alt="evidence"></a>
+      </div>
+      </div> 
+    </div>
 
-                </section>
-            
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <h3>Hard & Soft Skills</h3>
+            <h4>Front End</h4>
+            <p class="skills_tech">HTML5</p>
+            <div class="skill_circle skill_circle-40">
             </div>
-
+              <p class="skills_tech">CSS3</p>
+              <div class="skill_circle skill_circle-30">
+              </div>
+              <p class="skills_tech">JavaScript</p>
+            <div class="skill_circle skill_circle-10">
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--Fin contenido-->
 
-          <footer>
-            
-            <div class="contacto">
-
-              <h4>Contacto</h4>
-              
-              <p><a class="p-left" href="https://github.com/TheHely">Github</a></p>
-              <p><a class="p-center" href="https://www.linkedin.com/in/helen-aylen-villarroel-090969246/">Linkedin</a></p>
-              <p><a class="p-right" href="https://www.instagram.com/helen.villarroel.7140/">Instagram</a></p>
-            
-          </div>
-
-          <div class="copyright">
-
-            <span>&copy Villarroel Helen A.</span>
-
-          </div>
-
-          </footer>
+<!--Footer-->
+  <footer>        
+    <div class="contacto">
+      <h4>Contacto</h4>
+      <p><a class="p-left" href="https://github.com/TheHely">Github</a></p>
+      <p><a class="p-center" href="https://www.linkedin.com/in/helen-aylen-villarroel-090969246/">Linkedin</a></p>
+      <p><a class="p-right" href="https://www.instagram.com/helen.villarroel.7140/">Instagram</a></p>      
+    </div>
+    <div class="copyright">
+      <span>&copy Villarroel Helen A.</span>
+    </div>
+  </footer>
+<!--Fin footer-->
 
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-
 
 </body>
 </html>
