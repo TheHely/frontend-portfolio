@@ -5,57 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Villarroel Helen</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="assets\css\index.css">
    
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 </head>
 
-<body class="body bg-black text-light">
+<body class="body text-light">
   <!--Navbar-->
-    <header class="container-fluid sticky-top bg-dark">
-      <nav class="navbar navbar-expand-xxl border-1 mw-100">
-        <div class="container-fluid ">
-          <a class="nav-link" href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"><img class="navbar-brand img-fluid" src="img\APLogo-20-20.png" alt="Argentina Programa"></a>
+    <nav class="navbar navbar-expand-xxl border-1 mw-100 container-fluid bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa" target="_blank"><img class="navbar-brand img-fluid" src="assets\img\APLogo-20-20.png" alt="Argentina Programa"></a>
 
           <!--Menú hamburguesa-->
           <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div id="MenuNavegacion" class="collapse navbar-collapse">
+          <div id="MenuNavegacion" class="collapse navbar-collapse justify-content-end">
             <ul class="navbar-nav ms-3">
-              <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/helen.villarroel.7140/"><img class="img-fluid" src="img\Instagram_icon-icons.com_66804.png" alt="Instagram"></a></li>
-              <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/helen-aylen-villarroel-090969246/"><img class="img-fluid" src="img\linkedin_socialnetwork_17441.png" alt="Linkedin"></a></li>
-              <li class="nav-item"><a class="nav-link" href="https://github.com/TheHely"><img class="img-fluid" src="img\github_icon-icons.com_60477.png" alt="Github"></a></li>
-            </ul>
-            </ul>
+              <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/helen.villarroel.7140/"><img class="img-fluid" src="assets\img\Instagram_icon-icons.com_66804.png" alt="Instagram"></a></li>
+              <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/helen-aylen-villarroel-090969246/"><img class="img-fluid" src="assets\img\linkedin_socialnetwork_17441.png" alt="Linkedin"></a></li>
+              <li class="nav-item"><a class="nav-link" href="https://github.com/TheHely"><img class="img-fluid" src="assets\img\github_icon-icons.com_60477.png" alt="Github"></a></li>
+              
+                <!--boton modal-->
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ventanaModalLogIn">
+                  Log in
+                </button>
 
-            <ul class="navbar-nav ms-3">
-              <li class="nav-item">
-                <button class="btn nav-item btn-light float-sm-end active" type="button"><a class="nav-link" href="login.html">Log in</a></button>
-              </li>
+                <!--Ventana modal-->
+                <div class="modal fade" id="ventanaModalLogIn" tabindex="-1" aria-labelledby="modal-login" aria-hidden="true" data-mdb-backdrop="false" data-mdb-keyboard="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="modal-login">Título de la ventana modal</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                          <span>&times;</span>
+                        </button>
+                      </div>
+
+                      <div class="modal-body">
+                        <form>
+                          <h3 class="formulario-colores">Usuario</h3>
+                          <input type="text" minlength="4" maxlength="16" placeholder="Usuario">
+                          <h3 class="formulario-colores">Contraseña</h3>
+                          <input type="password" minlength="8" maxlength="16" placeholder="Contraseña">
+                        </form>
+                      </div>
+
+                      <div class="modal-footer">
+                        <button type="button" class="close btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">
+                          Cerrar
+                        </button>
+                        <button type="submit" class="submit btn btn-primary" aria-label="Log in">
+                          Ingresar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
             </ul>
           </div>
         </div>
-      </nav>
-    </header>
-<!--Fin navbar-->
+    </nav>
+  <!--Fin navbar-->
 
 <!--Contenido-->
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 text-center">
-        <img class="helenv img-fluid rounded-circle py-2" src="img\Villarroel-Helen-A.jpg" alt="Villarroel Helen A.">
+        <img class="helenv img-fluid rounded-circle py-2" src="assets\img\Villarroel-Helen-A.jpg" alt="Villarroel Helen A.">
         <h1 class="display-4 color-bienvenido">¡Bienvenido!</h1>
-        <h3 >Soy <b>Helen A. Villarroel</b>, una desarrolladora web</h3>
-        <h4>
-          <small class="text-muted">Actualmente estoy creando un portfolio web y estudiando en Argentina Programa, <br> segunda instancia (#YoProgramo)</small>
-        </h4>
+        <h3>Soy Helen A. Villarroel, una desarrolladora web</h3>
+        <p>
+          Actualmente estoy creando un portfolio web y estudiando en Argentina Programa, <br> siguiendo la segunda instancia; #YoProgramo
+        </p>
       </div>
     </div>
   </div>
-      <div class="container">
+
+      <div class="container py-2">
         <div class="row">
           <div class="col-3">
             <button class="btn btn-info"><a href="index.html#experience">Experiencia</a></button>
@@ -72,63 +103,256 @@
         </div>
       </div>
 
-    <div class="container">
-          <div class="row">
-            <div class="col-6">
-                <h3>Experiencia</h3>
-                <a href="" class="logo-lugar">Logo</a>
-                <h4>Mis dulzura</h4>
-                <p class="puesto"></p>
-                <p class="periodo"></p>
-                <p class="actividades"></p>
-            </div> 
-        <div class="col-6">
-          <h3>Proyectos</h3>
-          <h4>Nombre</h4>
-          <p class="fecha-realizacion"></p>
-          <p class="description"></p>
-          <p class="evidencia"></p>
-          <a href=""><img src="" alt="evidence"></a>
-      </div>
+    <!--boton modal experience-->
+  <div>
+    <div>
+      <div class="container bg-black bg-opacity-25">
+        <h3 class="text-center">Experiencia</h3>
+        <div class="row">
+          <div class="col-4 text-start">
+            <img class="no-disponible img-fluid rounded-circle" src="assets\img\Imagen_no_disponible.png" alt="Vacío">
+            <h4>Mis Dulzura</h4>
+            <p>01/02/2021-30/04/2021</p>
+          </div>
+          <div class="col-8 col_8 text-center">
+            <button class="align-self-start btn btn-primary img-fluid text-end" data-bs-toggle="modal" data-bs-target="#editar-experience">
+              <img class="editar" src="assets\img\flat-style-circle-edit_icon-icons.com_66939.png" alt="Editar">
+            </button>
+            <h5 class="actividad align-items-center">Encargada de la reposición de productos, atención al cliente y cobro de productos.</h5>
+          </div>
+        </div>
       </div> 
     </div>
 
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <h3>Hard & Soft Skills</h3>
-            <h4>Front End</h4>
-            <p class="skills_tech">HTML5</p>
-            <div class="skill_circle skill_circle-40">
-            </div>
-              <p class="skills_tech">CSS3</p>
-              <div class="skill_circle skill_circle-30">
+
+      <!--Ventana modal experience-->
+        <div class="modal fade" id="editar-experience" tabindex="-1" aria-labelledby="modal-experience" aria-hidden="true" data-mdb-backdrop="false" data-mdb-keyboard="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal-editar-experience">Título de la ventana modal</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span>&times;</span>
+                </button>
               </div>
-              <p class="skills_tech">JavaScript</p>
-            <div class="skill_circle skill_circle-10">
+
+          <div class="modal-body">
+            <form name="lugar-trabajo">
+              <input type="file" name="img-logo-experience">
+              <input type="text" name="lugar-experience" placeholder="Nombre del lugar de trabajo">
+              <h3>Fecha de inicio</h3>
+              <input type="date" name="fecha-inicio-experience">
+              <h3>Fecha de finalización</h3>
+              <input type="date" name="fecha-fin-experience">
+              <h3>Actividades realizadas</h3>
+              <input type="text" name="descripción-actividades" placeholder="Actividades realizadas">
+            </form>
+          </div>
+
+        <div class="modal-footer">
+          <button type="button" class="close btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">
+            Cerrar
+          </button>
+          <button type="button" class="btn btn-primary" aria-label="guardar">
+            Guardar
+          </button>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+    
+    <!--boton modal education-->
+    <div>
+      <div>
+          <div class="container bg-black bg-opacity-25">
+            <h3 class="text-center">Educación</h3>
+            <div class="row">
+                <div class="col-4 text-start">
+                  <img class="no-disponible img-fluid rounded-circle" src="assets\img\Imagen_no_disponible.png" alt="Vacío">
+                  <h4>Instituto Secundario Ricardo Palma</h4>
+                  <p>05/03/2013-/12/2018</p>
+                </div>
+                <div class="col-8">
+                  <button class="btn btn-primary img-fluid" data-bs-toggle="modal" data-bs-target="#editar-education">
+                    <img class="editar"  src="assets\img\flat-style-circle-edit_icon-icons.com_66939.png" alt="Editar">
+                  </button>
+                  <h5 class="actividad text-end align-items-center">Bachiller en economía y administración</h5>
+                </div>
+              </div>
+            </div> 
+          </div>
+
+
+        <!--Ventana modal education-->
+        <div class="modal fade" id="editar-education" tabindex="-1" aria-labelledby="modal-education" aria-hidden="true" data-mdb-backdrop="false" data-mdb-keyboard="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal-editar-education">Educación</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                  <span>&times;</span>
+                </button>
+              </div>
+
+            <div class="modal-body">
+              <form name="education">
+                <input type="file" name="img-logo-institucion">
+                <h3>Nombre Institucion</h3>
+                <input type="text" placeholder="Nombre institución">
+                <h3>Título</h3>
+                <input type="text" placeholder="Título">
+                <h3>Fecha finalización</h3>
+                <input type="date">
+              </form>
+            </div>
+
+          <div class="modal-footer">
+            <button type="button" class="close btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">
+              Cerrar
+            </button>
+            <button type="button" class="btn btn-primary" aria-label="guardar">
+              Guardar
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--boton modal proyect-->
+    <div>
+      <div>
+          <div class="container bg-black bg-opacity-25">
+            <h3 class="text-center">Proyecto</h3>
+            <div class="row">
+                <div class="col-4 text-start">
+                  <img class="no-disponible img-fluid rounded-circle" src="assets\img\Imagen_no_disponible.png" alt="Vacío">
+                  <h4>Portfolio</h4>
+                  <button class="editar btn btn-primary img-fluid" data-bs-toggle="modal" data-bs-target="#editar-education">
+                    <img class="editar" src="assets\img\flat-style-circle-edit_icon-icons.com_66939.png" alt="Editar">
+                  </button>
+                  <p>Se utilizó HTML5, Bootstrap y CSS3 para la realización de este proyecto. Personalmente creo que me ha ayudado a crecer en este mundo un poco cada día y a aprender a poner en práctica todo lo aprendido hasta el momento</p>
+                </div>
+                </div>
+              </div>
+            </div>
+
+
+        <!--Ventana modal proyect-->
+        <div class="modal fade" id="editar-proyect" tabindex="-1" aria-labelledby="modal-proyect" aria-hidden="true" data-mdb-backdrop="false" data-mdb-keyboard="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal-editar-proyect">Proyecto</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                  <span>&times;</span>
+                </button>
+              </div>
+
+            <div class="modal-body">
+              <form name="proyect">
+                <input type="file" name="img-logo-institucion">
+                <h3>Nombre proyecto</h3>
+                <input type="text" placeholder="Nombre proyecto">
+                <h3>Descripción breve</h3>
+                <input type="text" placeholder="Descripción breve">
+                <h3>Imágenes del proyecto</h3>
+                <input type="file" name="imagen">
+              </form>
+            </div>
+
+          <div class="modal-footer">
+            <button type="button" class="close btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">
+              Cerrar
+            </button>
+            <button type="button" class="btn btn-primary" aria-label="guardar">
+              Guardar
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!--Hard & soft skills-->
+    <div>
+      <div class="container-fluid w-100">
+        <div class="row">
+          <div class="col-12"><h3 class="text-center">Hard & Soft Skills</h3>
+            <button class="editar" class="btn float-lg-end float-sm-end float-md-end"><img src="assets\img\flat-style-circle-edit_icon-icons.com_66939.png" alt="Editar" class="edit img-fluid "></button>
+          </div>
+        </div>
+        
+            <!--barras de progreso-->
+            <form name="skills">
+                <div class="row py-4">
+                  <div class="col-4">
+                    <div class="skills">
+                      <h5 class="text-center">HTML</h5>
+                      <div class="barra">
+                        <div class="progress" style="--w:70%"></div>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="col-4">
+                      <div class="skills">
+                        <h5 class="text-center">CSS</h5>
+                        <div class="barra">
+                          <div class="progress" style="--w:50%"></div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  <div class="col-4">
+                    <div class="skills">
+                      <h5 class="text-center">JS</h5>
+                      <div class="barra align-self-center">
+                        <div class="progress" style="--w:20%"></div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </form>
+      </div>
+    </div>
 <!--Fin contenido-->
 
 <!--Footer-->
-  <footer>        
-    <div class="contacto">
+  <footer>     
+    <div class="container-fluid bg-dark">   
+    <div class="contacto text-center">
       <h4>Contacto</h4>
-      <p><a class="p-left" href="https://github.com/TheHely">Github</a></p>
-      <p><a class="p-center" href="https://www.linkedin.com/in/helen-aylen-villarroel-090969246/">Linkedin</a></p>
-      <p><a class="p-right" href="https://www.instagram.com/helen.villarroel.7140/">Instagram</a></p>      
+      <div class="row">
+        <div class="col-4">
+          <div class="text-center px-5">
+            <p><a class="link-info" href="https://github.com/TheHely">Github</a></p>
+        </div>
+      </div>
+      <div class="col-4">
+        <p class="text-center"><a class="link-info" href="https://www.linkedin.com/in/helen-aylen-villarroel-090969246/">Linkedin</a></p>
+      </div>
+      <div class="col-4">
+        <p class="text-center"><a class="link-info" href="https://www.instagram.com/helen.villarroel.7140/">Instagram</a></p>   
+      </div>   
     </div>
-    <div class="copyright">
-      <span>&copy Villarroel Helen A.</span>
+    <div class="row">
+      <div class="col-12">
+        <div class="copyright">
+          <span>&copy Villarroel Helen A.</span>
+        </div>
+      </div>
     </div>
   </footer>
 <!--Fin footer-->
 
-    <!--Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-
+  <!--Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 </body>
 </html>
